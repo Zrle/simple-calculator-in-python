@@ -1,0 +1,39 @@
+import sys
+Run=True
+izlaz=5
+def podeli(x,y):
+    return (x / y)
+def saberi(x,y):
+    return (x+y)
+def oduzmi(x,y):
+    return (x-y)
+def pomnozi(x,y):
+    return (x*y)
+
+while Run:
+    print("1.podeli,2.pomnozi,3.saberi,4.oduzmi")
+    izbor=input("izaberi operaciju: ")
+    if izbor in (1,2,3,4,izlaz):
+        if (izbor==1):
+            broj1=float(input("prvi broj:"))
+            broj2=float(input("drugi broj:"))
+            print (podeli(broj1,broj2))
+        elif (izbor==2):
+            broj1=float(input("prvi broj:"))
+            broj2=float(input("drugi broj:"))
+            print(pomnozi(broj1,broj2))
+        elif izbor==3:
+            broj1=float(input("prvi broj:"))
+            broj2=float(input("drugi broj:"))
+            print(saberi(broj1,broj2))
+        elif izbor==4:
+            broj1=float(input("prvi broj:"))
+            broj2=float(input("drugi broj:"))
+            print(oduzmi(broj1,broj2))
+        if izbor==5:
+            sys.exit()
+            Run=False
+    else:
+        print("nema funkcije")
+    Run=True
+   
